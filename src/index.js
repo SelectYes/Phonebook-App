@@ -136,6 +136,8 @@ init();
 
 /* TO DO (quality-of-life features)
 
+Test update for github
+
 Display "no search results" when... no search results.
 
 Required entries in input fields when saving contact
