@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phonebook App</title>
+	<script src="https://kit.fontawesome.com/a15780bccc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Phonebook App</h1>
+	</header>
+
+	<!-- LIST VIEW -->
+
+	<section class="content-wrapper">
+		<div class="list-view" style="display: block;">
+
+			<div class="search_add-container">
+				<div class="search-container" style="display: flex;">
+					<input class="search_field" type="text" name="search" placeholder="Search Contacts">
+					<i class="fas fa-search"></i>
+				</div>
+				<button class="back-button" style="display: none;">Back</button>
+				<button class="add-button" style="display: block;">Add Contact</button>
+			</div>
+			<div class="list-container">	
+			<!-- 	<div class="name-entry" data-id="123">
+					<p>Contact Name</p>
+					<p>0123456789</p>
+				</div>
+
+				<div class="name-entry" data-id="123">
+					<p>Contact Name</p>
+					<p>0123456789</p>
+				</div>
+
+				<div class="name-entry" data-id="123">
+					<p>Contact Name</p>
+					<p>0123456789</p>
+				</div>
+
+				<div class="name-entry" data-id="123">
+					<p>Contact Name</p>
+					<p>0123456789</p>
+				</div>
+
+				<div class="name-entry" data-id="123">
+					<p>Contact Name</p>
+					<p>0123456789</p>
+				</div> -->
+			</div>
+
+			<div class="name-entry">
+			</div>
+		</div>
+
+		<!-- CONTACT VIEW -->
+
+		<div class="contact-view" style="display: none;">
+			<i class="fas fa-times-circle"></i>			
+			<div class="profile-container">
+				<!-- <div class="details-name">Contact Name</div> -->
+				<img src="https://us.123rf.com/450wm/kritchanut/kritchanut1406/kritchanut140600112/29213222-stock-vector-male-silhouette-avatar-profile-picture.jpg?ver=6">
+			</div>
+
+			<div class="contact-menu">
+				<button class="contact-button delete-button">Delete</button>
+				<button class="contact-button edit-button">Edit</button>
+			</div>
+
+			<div class="contact-details">
+<!-- 			<div class="details-field">
+					<p class="details-class">Mobile</p>
+					<p class="details-data">0123456789</p>
+				</div>
+				<div class="details-field">
+					<p class="details-class">Email</p>
+					<p class="details-data">0123456789</p>
+				</div>
+				<div class="details-field">
+					<p class="details-class">Company</p>
+					<p class="details-data">0123456789</p>
+				</div>
+ -->			</div>
+		</div>
+
+		<!-- SAVE VIEW -->
+
+		<div class="save-view" style="display: none;">
+			<div class="save-view-header">
+				<button class="save_view_btn close_button">Close</button>
+				<h3>New Contact</h3>
+				<button class="save_view_btn save_contact">Save</button>
+			</div>
+
+			<input class="contact-field name-field" type="text" name="contact_name" placeholder="Name">
+			<input class="contact-field number-field" type="tel" name="contact_number" placeholder="number (change to mobile)">
+			<input class="contact-field email-field" type="email" name="other" placeholder="Email">
+		</div>	
+
+		<!-- EDIT VIEW -->
+
+		<div class="edit-view" style="display: none;">
+			<div class="edit-view-header">
+				<button class="save_view_btn close_edit_button">Close</button>
+				<h3>Edit Contact</h3>
+				<button class="save_view_btn save_edit">Save</button>
+			</div>
+
+			<input class="contact-field edit-name-field" type="text" name="contact_name" placeholder="Edit Name">
+			<input class="contact-field edit-number-field" type="tel" name="contact_number" placeholder="Edit Number (change to mobile)">
+			<input class="contact-field edit-email-field" type="email" name="other" placeholder="Edit Email">
+		</div>	
+
+	</section>
+
+<script type="module" src="./src/index.js" ></script>
+</body>
+</html>
